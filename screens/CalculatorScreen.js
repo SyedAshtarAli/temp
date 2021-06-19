@@ -10,6 +10,7 @@ export default class CalculatorScreen extends React.Component {
 
     this.state={
       display: "0",
+      
     };
 
   }
@@ -54,9 +55,16 @@ export default class CalculatorScreen extends React.Component {
         </View>
 
         <View style={styles.buttonRow}>
-          <CalcButton title="0" color="white" backgroundColor="#333333" style={{ flex: 2 }} />
-          <CalcButton title="." color="white" backgroundColor="#333333" />
-          <CalcButton title="=" color="white" backgroundColor="#ff9e0a" />
+          <View style={{flex:1 }}>
+           <CalcButton title="0" color="white" backgroundColor="#333333" />
+          </View>
+          <View style={{flex:0.97 }}>
+            <View style={{ flexDirection:'row', justifyContent:'space-between'}}>
+              <CalcButton title="." color="white" backgroundColor="#333333" />
+              <CalcButton title="=" color="white" backgroundColor="#ff9e0a" />
+              </View>
+          </View>
+         
         </View>
       </View>
     );
