@@ -16,7 +16,7 @@ export default class CalculatorScreen extends React.Component {
 
   onDigitPress=()=>{
     Alert.alert(
-      'You need to...'
+      'ashtar_bug_timer'
    );
   }
 
